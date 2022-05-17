@@ -42,7 +42,8 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'https://mini-project-gisela.hasura.app/v1/graphql'
+        httpEndpoint: 'https://mini-project-gisela.hasura.app/v1/graphql',
+        wsEndpoint: 'wss://mini-project-gisela.hasura.app/v1/graphql'
       }
     }
   },
@@ -73,9 +74,9 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      light: true,
       themes: {
-        dark: {
+        light: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
